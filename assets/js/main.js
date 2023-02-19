@@ -53,6 +53,12 @@
   let backtotop = select('.back-to-top')
   if (backtotop) {
     const toggleBacktotop = () => {
+      
+      setTimeout(() => {
+        
+        document.querySelector("#modbtn1").click();
+      }, 1000);
+
       if (window.scrollY > 100) {
         backtotop.classList.add('active')
       } else {
@@ -199,5 +205,22 @@
       clickable: true
     }
   });
+
+
+  const scriptURL =
+  "https://script.google.com/macros/s/AKfycbyjKK4UQ4x-WlTtZMxX5A4kbkyFuLISPNJG6caTbRo2gIgopzlJTB2Wc_60mjjh_yRjjw/exec";
+
+const form = document.forms["google-sheet"];
+
+form.addEventListener("submit", (e) => {
+  document.querySelector("#modbtn1").click();
+  e.preventDefault();
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) =>
+      alert("Thanks for Contacting us..! We Will Contact You Soon...")
+      
+    )
+    .catch((error) => console.error("Error!", error.message));
+});
 
 })()
