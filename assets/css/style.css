@@ -2234,3 +2234,7 @@ footer .credits {
     white-space: normal;
   }
 }
+
+.nh {
+  position: inherit;
+}
