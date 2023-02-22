@@ -54,10 +54,7 @@
   if (backtotop) {
     const toggleBacktotop = () => {
       
-      setTimeout(() => {
-        
-        document.querySelector("#modbtn1").click();
-      }, 1000);
+     
 
       if (window.scrollY > 100) {
         backtotop.classList.add('active')
@@ -222,5 +219,11 @@ form.addEventListener("submit", (e) => {
     )
     .catch((error) => console.error("Error!", error.message));
 });
+
+
+setTimeout(() => {
+        
+  document.querySelector("#modbtn1").click();
+}, 5000);
 
 })()
