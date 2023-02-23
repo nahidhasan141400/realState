@@ -296,6 +296,30 @@ anime.timeline({loop: true})
     duration: 500,
     delay: 500
   });
+  // animation 3 
+  // Wrap every letter in a span
+var textWrapper = document.querySelectorAll('.ml6 .letters');
+
+textWrapper.forEach((e)=>{
+  e.innerHTML = e.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+  anime.timeline({loop: true})
+    .add({
+      targets: '.ml6 .letter',
+      translateY: ["1.1em", 0],
+      translateZ: 0,
+      duration: 3000,
+      delay: (el, i) => 100 * i
+    }).add({
+      targets: '.ml6',
+      opacity: 50,
+      duration: 400,
+      easing: "easeOutExpo",
+      delay: 1000
+    });
+})
+
+
 //anim lib
 
 

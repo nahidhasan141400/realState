@@ -2233,8 +2233,32 @@ footer .credits {
     text-align: center;
     white-space: normal;
   }
+  .title-c {
+    font-size: 26px;
+  }
 }
 
 .nh {
   position: inherit;
+}
+
+/* ml 6 */
+.ml6 {
+  position: relative;
+  font-weight: 900;
+  font-size: 2.2em;
+}
+
+.ml6 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1em;
 }
