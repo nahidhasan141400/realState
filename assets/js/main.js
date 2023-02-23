@@ -223,8 +223,10 @@ form.addEventListener("submit", (e) => {
 
 //// animasion lib 
 // Wrap every letter in a span
-var textWrapper = document.querySelector('.ml2');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+var textWrapper = document.querySelectorAll('.ml2');
+
+textWrapper.forEach((e)=>{
+  e.innerHTML = e.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
 anime.timeline({loop: true})
   .add({
@@ -233,15 +235,42 @@ anime.timeline({loop: true})
     opacity: [0,1],
     translateZ: 0,
     easing: "easeOutExpo",
-    duration: 950,
+    duration: 2050,
     delay: (el, i) => 70*i
   }).add({
     targets: '.ml2',
     opacity: 0,
-    duration: 1000,
+    duration: 700,
     easing: "easeOutExpo",
     delay: 1000
   });
+
+})
+
+// wellcone Animation
+var textWrapper2 = document.querySelectorAll('.mlwellcome');
+
+textWrapper2.forEach((e)=>{
+  e.innerHTML = e.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.mlwellcome .letter',
+    scale: [4,1],
+    opacity: [0,1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 1550,
+    delay: (el, i) => 70*i
+  }).add({
+    targets: '.mlwellcome',
+    opacity: 0,
+    duration: 700,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
+})
 
   // animatio 2 
 

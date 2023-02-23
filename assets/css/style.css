@@ -2184,7 +2184,16 @@ footer .credits {
   display: inline-block;
   line-height: 1em;
 }
+/* mlwellcome */
+.mlwellcome {
+  font-weight: 900;
+  font-size: 3.5em;
+}
 
+.mlwellcome .letter {
+  display: inline-block;
+  line-height: 1em;
+}
 .ml4 {
   position: relative;
   white-space: nowrap;
@@ -2261,4 +2270,9 @@ footer .credits {
 .ml6 .letter {
   display: inline-block;
   line-height: 1em;
+}
+
+.centernh {
+  width: 100%;
+  text-align: center;
 }
