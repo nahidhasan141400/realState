@@ -1,9 +1,12 @@
 html {
+  position: relative;
   max-width: 100vw;
   overflow-x: hidden;
 }
 
 body {
+  width: 100%;
+  overflow-x: hidden;
   font-family: "Poppins", sans-serif;
   color: #555555;
 }
@@ -2244,7 +2247,7 @@ footer .credits {
 .llogo {
   width: 280px;
 }
-@media (max-width: 576px) {
+@media (max-width: 776px) {
   .llogo {
     width: 230px;
   }
