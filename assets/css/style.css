@@ -111,6 +111,9 @@ a:hover {
     font-size: 1.8rem;
   }
 }
+.nonh {
+  position: relative;
+}
 
 .color-a {
   text-decoration: none;
