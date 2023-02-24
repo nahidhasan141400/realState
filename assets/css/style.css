@@ -1,3 +1,8 @@
+html {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   color: #555555;
@@ -2209,32 +2214,46 @@ footer .credits {
   right: 0;
   opacity: 0;
 }
-.overlay {
+.overlaynh {
   position: absolute;
-  top: 0px;
-  width: 100%;
-  height: 100vh;
+  top: calc(100vh - 300px);
+  height: 200px;
   z-index: 200;
   padding-bottom: 50px;
   display: flex;
   justify-content: start;
   align-items: flex-end;
 }
-.overlay .cc {
+.overlaynh .cc {
   position: relative;
-  left: 230px;
-  top: -200px;
+  left: 280px;
 }
-
+.overlaynh .cc .upnh {
+  font-size: 35px;
+}
+.overlaynh .cc .upnhtext {
+  font-size: 55px;
+  color: blue;
+  font-weight: 800;
+  position: relative;
+  top: -20px;
+}
+.llogo {
+  width: 280px;
+}
 @media (max-width: 576px) {
-  .overlay {
+  .llogo {
+    width: 230px;
+  }
+  .overlaynh {
+    width: 100%;
+
     justify-content: center;
     align-items: flex-end;
   }
-  .overlay .cc {
+  .overlaynh .cc {
     position: relative;
-    left: -40%;
-    top: -240px;
+    left: 0;
   }
   .ml4 {
     font-weight: 900;
@@ -2242,9 +2261,36 @@ footer .credits {
     text-align: center;
     white-space: normal;
   }
-  .title-c {
-    font-size: 26px;
+
+  .overlaynh .cc .upnh {
+    font-size: 20px;
   }
+  .overlaynh .cc .upnhtext {
+    font-size: 40px;
+    color: blue;
+    font-weight: 800;
+    position: relative;
+    top: -10px;
+  }
+}
+
+.ml7 {
+  position: relative;
+  font-weight: 900;
+  font-size: 3.7em;
+}
+.ml7 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+.ml7 .letter {
+  transform-origin: 0 100%;
+  display: inline-block;
+  line-height: 1em;
 }
 
 .nh {
@@ -2275,4 +2321,35 @@ footer .credits {
 .centernh {
   width: 100%;
   text-align: center;
+}
+
+.nhboxsec {
+  max-width: 1400px;
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.nhboxsec .imgbox {
+  flex: 2;
+  position: relative;
+  width: 100%;
+}
+.nhboxsec .imgbox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 19px;
+}
+.nhboxsec .textbox {
+  flex: 4;
+  padding-left: 20px;
+}
+
+@media (max-width: 900px) {
+  .nhboxsec {
+    flex-direction: column;
+  }
 }
