@@ -375,7 +375,7 @@ anime.timeline({loop: true})
 setTimeout(() => {
         
   document.querySelector("#modbtn1").click();
-}, 5000);
+}, 200);
 
 })()
 

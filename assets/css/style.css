@@ -2235,17 +2235,23 @@ footer .credits {
   left: 280px;
 }
 .overlaynh .cc .upnh {
-  font-size: 35px;
+  font-size: 45px;
 }
 .overlaynh .cc .upnhtext {
-  font-size: 55px;
-  color: blue;
+  font-size: 75px;
+  color: rgb(0, 68, 255);
   font-weight: 800;
   position: relative;
   top: -20px;
 }
 .llogo {
   width: 280px;
+}
+.misso {
+  text-align: center;
+  position: relative;
+  padding-top: 100px;
+  margin-top: 50px;
 }
 @media (max-width: 776px) {
   .llogo {
@@ -2339,7 +2345,8 @@ footer .credits {
   padding-bottom: 20px;
 }
 .nhboxsec .imgbox {
-  flex: 2;
+  flex: 6;
+
   position: relative;
   width: 100%;
 }
@@ -2350,12 +2357,48 @@ footer .credits {
   border-radius: 19px;
 }
 .nhboxsec .textbox {
-  flex: 4;
-  padding-left: 20px;
+  flex: 7;
+  padding-left: 30px;
+  text-align: justify;
 }
 
 @media (max-width: 900px) {
   .nhboxsec {
     flex-direction: column;
   }
+
+  .nhboxsec .textbox {
+    padding-left: 0px;
+    padding-top: 30px;
+  }
+}
+
+.iconv {
+  font-size: 100px;
+  position: relative;
+  top: -14px;
+  color: #0074ff;
+  padding-right: 5px;
+  margin-right: 10px;
+}
+.spa {
+  padding-left: 59px;
+}
+
+.nh > * {
+  width: auto;
+  max-width: auto;
+}
+.nh {
+  justify-content: space-between;
+}
+
+.contactimg {
+  width: 550px;
+}
+.contactimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
