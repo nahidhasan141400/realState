@@ -39,6 +39,38 @@
   <body>
     <!-- modul  -->
     <!-- Button trigger modal -->
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+
+    <script>
+      var chatbox = document.getElementById("fb-customer-chat");
+      chatbox.setAttribute("page_id", "103957302575554");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v16.0",
+        });
+      };
+
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
+    <!-- masssanger cahat -->
 
     <!-- Modal -->
     <div
@@ -771,67 +803,79 @@
             </div>
           </div>
           <!-- middel  -->
-          <div style="max-width: auto" class="icon-box">
-            <div class="icon-box-icon">
-              <span class="bi bi-share"></span>
-            </div>
-            <div class="icon-box-content table-cell">
-              <div class="icon-box-title">
-                <h4 class="icon-title">Social networks</h4>
+          <!-- //// -->
+          <div class="col-sm-12 col-md-4 section-md-t3">
+            <div class="widget-a">
+              <div class="w-header-a">
+                <h3 class="w-title-a text-brand">Connect with us</h3>
               </div>
-              <div class="icon-box-content">
-                <div class="socials-footer">
-                  <ul class="list-inline">
-                    <li class="list-inline-item">
-                      <a
-                        target="_blank"
-                        href="https://www.facebook.com/radiantlivingltd"
-                        class="link-one"
-                      >
-                        <i class="bi bi-facebook" aria-hidden="true"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a
-                        target="_blank"
-                        href="https://www.facebook.com/radiantlivingltd"
-                        class="link-one"
-                      >
-                        <i class="bi bi-twitter" aria-hidden="true"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a
-                        target="_blank"
-                        href="https://www.facebook.com/radiantlivingltd"
-                        class="link-one"
-                      >
-                        <i class="bi bi-instagram" aria-hidden="true"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a
-                        target="_blank"
-                        href="https://www.facebook.com/radiantlivingltd"
-                        class="link-one"
-                      >
-                        <i class="bi bi-linkedin" aria-hidden="true"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a
-                        target="_blank"
-                        href="https://www.facebook.com/radiantlivingltd"
-                        class="link-one"
-                      >
-                        <i class="bi bi-youtube" aria-hidden="true"></i>
-                      </a>
-                    </li>
-                  </ul>
+              <div class="w-body-a">
+                <div style="max-width: auto" class="icon-box">
+                  <div class="icon-box-icon">
+                    <span class="bi bi-share"></span>
+                  </div>
+                  <div class="icon-box-content table-cell">
+                    <div class="icon-box-title">
+                      <h4 class="icon-title">Social networks</h4>
+                    </div>
+                    <div class="icon-box-content">
+                      <div class="socials-footer">
+                        <ul class="list-inline">
+                          <li class="list-inline-item">
+                            <a
+                              target="_blank"
+                              href="https://www.facebook.com/radiantlivingltd"
+                              class="link-one"
+                            >
+                              <i class="bi bi-facebook" aria-hidden="true"></i>
+                            </a>
+                          </li>
+                          <li class="list-inline-item">
+                            <a
+                              target="_blank"
+                              href="https://www.facebook.com/radiantlivingltd"
+                              class="link-one"
+                            >
+                              <i class="bi bi-twitter" aria-hidden="true"></i>
+                            </a>
+                          </li>
+                          <li class="list-inline-item">
+                            <a
+                              target="_blank"
+                              href="https://www.facebook.com/radiantlivingltd"
+                              class="link-one"
+                            >
+                              <i class="bi bi-instagram" aria-hidden="true"></i>
+                            </a>
+                          </li>
+                          <li class="list-inline-item">
+                            <a
+                              target="_blank"
+                              href="https://www.facebook.com/radiantlivingltd"
+                              class="link-one"
+                            >
+                              <i class="bi bi-linkedin" aria-hidden="true"></i>
+                            </a>
+                          </li>
+                          <li class="list-inline-item">
+                            <a
+                              target="_blank"
+                              href="https://www.facebook.com/radiantlivingltd"
+                              class="link-one"
+                            >
+                              <i class="bi bi-youtube" aria-hidden="true"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <!-- ////test  -->
+
           <!-- middel end -->
           <div class="col-sm-12 col-md-4 section-md-t3">
             <div class="widget-a">
