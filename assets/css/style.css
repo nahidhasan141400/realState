@@ -623,7 +623,8 @@ a:hover {
 --------------------------------------------------------------*/
 .navbar-default {
   transition: all 0.5s ease-in-out;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
+  background: linear-gradient(-90deg, #c0ffff, #fff);
   padding-top: 28px;
   padding-bottom: 28px;
   -webkit-backface-visibility: hidden;
@@ -2443,7 +2444,7 @@ footer .credits {
 .section-footer,
 footer {
   background: rgb(0, 108, 183);
-  background: linear-gradient(90deg, #006cb7 0%, rgba(51, 51, 114, 1) 100%);
+  background: linear-gradient(90deg, #006cb7 0%, #110252 100%);
   color: #fff;
 }
 
@@ -2457,7 +2458,7 @@ footer {
 }
 
 .section-footer .color-a {
-  color: #cdcdcd;
+  color: #ffffff;
 }
 .section-footer h4 {
   color: #fff;
@@ -2496,6 +2497,7 @@ footer .copyright span {
   background-color: #006cb7;
   font-weight: 700;
   font-size: 20px;
+  border-radius: 10px;
 }
 
 #btnsub:hover {
@@ -2572,4 +2574,27 @@ footer .copyright span {
 .serviceSC .right h1 {
   font-size: 45px;
   font-weight: 700;
+}
+
+@media (max-width: 550px) {
+  .serviceSC {
+    flex-direction: column;
+  }
+  .rev {
+    flex-direction: column;
+  }
+  .serviceSC .right {
+    flex: 1;
+    margin: 10px;
+  }
+
+  .serviceSC .right h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+}
+
+.border-bottomnh {
+  /* border-color: #b02a30; */
+  border-bottom: 1px solid #9e2d33;
 }
