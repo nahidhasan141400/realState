@@ -2239,7 +2239,10 @@ footer .credits {
 }
 .overlaynh .cc .upnhtext {
   font-size: 75px;
-  color: rgb(0, 68, 255);
+  color: transparent;
+  background: linear-gradient(90deg, #006cb7 0%, rgba(51, 51, 114, 1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
   font-weight: 800;
   position: relative;
   top: -20px;
@@ -2279,7 +2282,6 @@ footer .credits {
   }
   .overlaynh .cc .upnhtext {
     font-size: 40px;
-    color: blue;
     font-weight: 800;
     position: relative;
     top: -10px;
@@ -2399,8 +2401,16 @@ footer .credits {
 .contactimg img {
   width: 100%;
   height: 100%;
+  background-position: 200px 0px;
+  background-size: 100%;
   object-fit: cover;
   border-radius: 10px;
+}
+
+@media (max-width: 450px) {
+  .contactimg img {
+    display: none;
+  }
 }
 
 .newsinpfo input {
@@ -2480,4 +2490,48 @@ footer .copyright span {
 .navtomission {
   position: relative;
   top: -200px;
+}
+
+#btnsub {
+  background-color: #006cb7;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#btnsub:hover {
+  background-color: #d2ecff;
+  color: #002036;
+  box-shadow: 0px 10px 20px -10px black;
+}
+
+.serviceban {
+  background: url(../img/logo/Logo_mockup_2.jpg);
+}
+.headBen {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.headBen .tt {
+  padding: 50px 100px;
+  position: relative;
+  top: 50px;
+  border: 1px solid #ffffff27;
+  border-radius: 9px;
+  background: rgba(250, 250, 250, 0.137);
+  backdrop-filter: blur(4px);
+}
+.headBen h1 {
+  font-size: 40px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #006cb7 0%, rgba(51, 51, 114, 1) 100%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
