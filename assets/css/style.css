@@ -2415,5 +2415,17 @@ footer .credits {
 .newsinpfo button {
   border: none;
   font-size: 20px;
-  background-color: gray;
+  background-color: #0074ff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 400;
+  letter-spacing: 1px;
+
+  color: #fff;
+  margin-top: 5px;
+  transition: all 0.3s;
+}
+.newsinpfo button:hover {
+  background-color: #2386ff;
+  box-shadow: 0px 7px 15px -6px black;
 }
