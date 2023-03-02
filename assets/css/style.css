@@ -2403,3 +2403,17 @@ footer .credits {
   border-radius: 10px;
 }
 
+.newsinpfo input {
+  border: 1px solid gray;
+  outline: none;
+  padding: 2px 3px;
+}
+.newsinpfo input:focus {
+  border: 1px solid #0074ff;
+}
+
+.newsinpfo button {
+  border: none;
+  font-size: 20px;
+  background-color: gray;
+}
