@@ -2429,3 +2429,59 @@ footer .credits {
   background-color: #2386ff;
   box-shadow: 0px 7px 15px -6px black;
 }
+
+.section-footer,
+footer {
+  background: rgb(0, 108, 183);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 108, 183, 1) 0%,
+    rgba(51, 51, 114, 1) 100%
+  );
+  color: #fff;
+}
+
+.section-footer .text-brand,
+.section-footer .icon-title {
+  color: #fff;
+}
+
+.section-footer .icon-box-icon {
+  color: #fff;
+}
+
+.section-footer .color-a {
+  color: #cdcdcd;
+}
+.section-footer h4 {
+  color: #fff;
+}
+.section-footer .list-unstyled .item-list-a a {
+  color: #fff;
+}
+
+.section-footer .list-unstyled .item-list-a a:hover {
+  color: rgb(199, 199, 199);
+}
+
+.section-footer .list-inline-item a {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.section-footer .list-inline-item a:hover {
+  color: rgb(174, 246, 255);
+}
+
+footer .copyright {
+  color: rgb(195, 223, 255);
+}
+
+footer .copyright span {
+  color: #fff;
+}
+
+.navtomission {
+  position: relative;
+  top: -200px;
+}
