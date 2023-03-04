@@ -2241,12 +2241,14 @@ footer .credits {
 .overlaynh .cc .upnhtext {
   font-size: 75px;
   color: transparent;
-  background: linear-gradient(90deg, #006cb7 0%, rgba(51, 51, 114, 1) 100%);
+  background: linear-gradient(90deg, #006cb7 0%, rgba(51, 51, 114, 1), #006cb7);
   -webkit-background-clip: text;
+  background-size: 200%;
   background-clip: text;
   font-weight: 800;
   position: relative;
   top: -20px;
+  animation: anim 8s linear infinite;
 }
 .llogo {
   width: 280px;
@@ -2532,10 +2534,33 @@ footer .copyright span {
 .headBen h1 {
   font-size: 40px;
   font-weight: 800;
-  background: linear-gradient(90deg, #006cb7 0%, rgba(51, 51, 114, 1) 100%);
+  background: linear-gradient(90deg, #006cb7, rgba(51, 51, 114, 1), #006cb7);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+  background-size: 200%;
+  animation: anim 3s linear infinite;
+}
+
+.animegr {
+  background: linear-gradient(90deg, #006cb7, rgba(51, 51, 114, 1), #006cb7);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: 200%;
+  animation: anim 3s linear infinite;
+}
+
+@keyframes anim {
+  0% {
+    background-position: 100%;
+  }
+  50% {
+    background-position: 200%;
+  }
+  100% {
+    background-position: 100%;
+  }
 }
 
 .serviceSC {
