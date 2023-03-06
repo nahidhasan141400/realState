@@ -10,7 +10,7 @@
     }
   }
 
-  /**
+  /**F
    * Easy event listener function
    */
   const on = (type, el, listener, all = false) => {

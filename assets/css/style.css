@@ -2623,3 +2623,14 @@ footer .copyright span {
   /* border-color: #b02a30; */
   border-bottom: 1px solid #9e2d33;
 }
+
+.news-img-box {
+  width: 100%;
+  position: relative;
+}
+.news-img-box img {
+  width: 100%;
+}
+.ce {
+  text-align: center;
+}
