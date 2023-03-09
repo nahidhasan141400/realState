@@ -150,6 +150,9 @@ a:hover {
   position: relative;
   font-weight: 600;
 }
+.nav-link {
+  position: relative;
+}
 
 .nav-pills-a.nav-pills .nav-link.active {
   background-color: transparent;
@@ -165,7 +168,37 @@ a:hover {
   background-color: #006cb7;
   z-index: 2;
 }
+.nav-pills-a.nav-pills .nav-link.active:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -1px;
+  width: 100%;
+  height: 2px;
+  background-color: #006cb7;
+  z-index: 2;
+}
 
+.nav-link::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: #006cb7;
+  top: 4px;
+  width: 0%;
+  left: 0px;
+  transition: all 0.3s linear;
+}
+
+.nav-link:hover::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: #006cb7;
+  top: 4px;
+  width: 100%;
+  left: 0;
+}
 /*------/ Bg Image /------*/
 .bg-image {
   background-repeat: no-repeat;
@@ -2257,7 +2290,7 @@ footer .credits {
   text-align: center;
   position: relative;
   padding-top: 100px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 @media (max-width: 776px) {
   .llogo {
@@ -2349,6 +2382,10 @@ footer .credits {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+.rev {
+  flex-direction: row-reverse;
+}
 .nhboxsec .imgbox {
   flex: 6;
 
@@ -2366,10 +2403,16 @@ footer .credits {
   padding-left: 30px;
   text-align: justify;
 }
+.rev .textbox {
+  padding-right: 30px;
+}
 
 @media (max-width: 900px) {
   .nhboxsec {
     flex-direction: column;
+  }
+  .rev {
+    flex-direction: column-reverse;
   }
 
   .nhboxsec .textbox {
@@ -2509,7 +2552,7 @@ footer .copyright span {
 }
 
 .serviceban {
-  background: url(../img/logo/Logo_mockup_2.jpg);
+  background: url(https://source.unsplash.com/random/200*600/?realstate);
 }
 .headBen {
   width: 100%;
@@ -2633,4 +2676,14 @@ footer .copyright span {
 }
 .ce {
   text-align: center;
+}
+
+/* //// dropdown reset  */
+.dropdown-toggle::after {
+  border: none;
+}
+
+.about {
+  background: url(../img/pertern/pt1.jpg);
+  background-attachment: fixed;
 }
